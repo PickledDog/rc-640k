@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name rc-640k)(type Legacy)(uri ${KIPRJMOD}/rc-640k.lib)(options "")(descr ""))
+)
