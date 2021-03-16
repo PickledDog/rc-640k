@@ -1,7 +1,6 @@
 # rc-640k
  128K+512K RAM/ROM card for RC2014
 ![Assembled PD108](/img/assembled.jpg)
-(version 0.9 shown, current version 1.0 has only minor layout changes)
 
 ## Overview
 This RC2014-compatible board provides RAM and flash ROM, software-pageable in 32k pages. 16 ROM or 4 RAM pages may be paged into the lower 32k of Z80 memory. This paging scheme is compatible with Wayne Warthen's [RomWBW](https://github.com/wwarthen/RomWBW).
@@ -28,7 +27,7 @@ MPCL_RAM	.EQU	$78		; SBC MEM MGR RAM PAGE SELECT REG (WRITE ONLY)
 MPCL_ROM	.EQU	$7C		; SBC MEM MGR ROM PAGE SELECT REG (WRITE ONLY)
 ;
 ```
-With our new file, we can go ahead and build our ROM image. Under Windows, this is done with the following commands:
+With our new file, we can go ahead and build our ROM image. Under Windows, this is done with the following commands in `Source`:
 
 * `BuildShared`
   * Wait for this to complete, ignoring the harmless program origin warnings
