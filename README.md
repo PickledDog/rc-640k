@@ -27,6 +27,11 @@ MPCL_RAM	.EQU	$78		; SBC MEM MGR RAM PAGE SELECT REG (WRITE ONLY)
 MPCL_ROM	.EQU	$7C		; SBC MEM MGR ROM PAGE SELECT REG (WRITE ONLY)
 ;
 ```
+As of RomWBW 3.1, it is possible to have a ROMdisk without a RAMdisk (which this board does not support). If building RomWBW 3.1 or later, add this line too: 
+```
+MDRAM		.SET	FALSE		; MD: DISABLE RAM DISK
+;
+```
 With our new file, we can go ahead and build our ROM image. Under Windows, this is done with the following commands in `Source`:
 
 * `BuildShared`
